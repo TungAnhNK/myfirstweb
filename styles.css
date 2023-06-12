@@ -1,0 +1,219 @@
+:root {
+  box-sizing: border-box;
+}
+::after,
+::before {
+  box-sizing: inherit;
+}
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue";
+}
+.h2_title {
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
+.h2_title_selected {
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_email {
+  font-size: 2rem;
+  padding: 0 0 0 17px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.nav_follow {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 17px;
+}
+.nav_follow:hover {
+  color: #4c00ff;
+}
+.nav_email:hover {
+  color: #4c00ff;
+}
+.introduce {
+  font-style: normal;
+  font-weight: 400;
+  text-align: start;
+  font-size: 2.5rem;
+  margin: 0px;
+  padding: 0 0 0 17px;
+}
+.logo_person {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0.9;
+}
+.logo_personAI {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  left: 510px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0.3;
+}
+.logo_panther {
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  left: 1010px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0.3;
+}
+.logo_brand {
+  width: 100%;
+  height: 500px;
+  z-index: 0;
+  position: absolute;
+}
+
+.images {
+  position: relative;
+  height: 500px;
+}
+.marquee {
+  background-color: black;
+  color: white;
+}
+.marquee_selected {
+  background-color: white;
+  color: black;
+}
+.kimchiji {
+  display: flex;
+  flex-direction: start;
+  flex-direction: space-between;
+}
+
+@media only screen and (max-width: 450px) {
+  .logo_person {
+    width: 100%;
+    height: auto;
+  }
+}
+.d-row-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: start;
+}
+.kimchiji_left {
+  width: 50%;
+  padding: 0 0 0 17px;
+  font-size: 1.5rem;
+}
+.kimchiji_right {
+  width: 50%;
+  padding: 0 17 0 0px;
+  font-size: 1.2rem;
+}
+.kimchiji_pic {
+  width: 100%;
+  height: auto;
+}
+.d-row-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: start;
+}
+.kimoji_left {
+  width: 50%;
+  padding: 0 0 0 17px;
+  font-size: 1.5rem;
+}
+.kimoji_right {
+  width: 50%;
+  padding: 0 17 0 0px;
+  font-size: 1.2rem;
+}
+.kimoji_pic {
+  width: 80px;
+  height: auto;
+  padding-left: 17px;
+}
+.video_embed {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+.kimoji_text {
+  font-size: 2rem;
+  padding-left: 17px;
+}
+.gg-sun {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(to bottom, currentColor 4px, transparent 0)
+      no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 5px
+      14px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 14px
+      5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+}
+
+.gg-sun::after,
+.gg-sun::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+
+.gg-sun::before {
+  transform: rotate(-45deg);
+}
+
+.gg-sun::after {
+  transform: rotate(45deg);
+}
